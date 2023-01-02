@@ -33,7 +33,7 @@ jobs:
           key: ${{ secrets.DEPLOY_SERVER_KEY }}
           port: ${{ secrets.DEPLOY_SERVER_PORT }}
           script: |
-            cd goScience/GSStudy
+            cd goScience/KKFrontend
             git pull
 
       - name: Create env-file
@@ -44,7 +44,7 @@ jobs:
           key: ${{ secrets.DEPLOY_SERVER_KEY }}
           port: ${{ secrets.DEPLOY_SERVER_PORT }}
           script: |
-            cd goScience/GSStudy/app
+            cd goScience/KKFrontend/app
             cp .env.example .env
 
       - name: Down old containers
@@ -55,7 +55,7 @@ jobs:
           key: ${{ secrets.DEPLOY_SERVER_KEY }}
           port: ${{ secrets.DEPLOY_SERVER_PORT }}
           script: |
-            cd goScience/GSStudy
+            cd goScience/KKFrontend
             docker-compose down
 
       - name: Up new containers
@@ -66,5 +66,5 @@ jobs:
           key: ${{ secrets.DEPLOY_SERVER_KEY }}
           port: ${{ secrets.DEPLOY_SERVER_PORT }}
           script: |
-            cd goScience/GSStudy
+            cd goScience/KKFrontend
             docker-compose up -d
