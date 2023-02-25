@@ -1,0 +1,1 @@
+export { EditKid } from './EditKid';

@@ -1,0 +1,1 @@
+export { AddKid } from './AddKid';

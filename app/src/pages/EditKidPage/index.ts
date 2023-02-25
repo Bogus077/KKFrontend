@@ -1,0 +1,1 @@
+export { EditKidPage } from './EditKidPage';

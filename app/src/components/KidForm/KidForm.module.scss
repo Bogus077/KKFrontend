@@ -1,0 +1,31 @@
+.main {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  max-width: 100%;
+  max-height: 300px;
+
+  &__wrapper {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  width: 300px;
+  // background-color: #fff;
+  border-radius: 5px;
+}
+
+.team {
+  width: 300px;
+}

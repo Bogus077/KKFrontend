@@ -5,14 +5,14 @@ services:
     image: node:latest
     volumes:
       - /etc/letsencrypt/:/etc/letsencrypt/
-      - ./app:/app
+      - ./app/build:/app/build
     expose:
       - '3000'
     entrypoint:
       [
         sh,
         -c,
-        'cd /app && yarn install && yarn build && npm i serve -g && serve -s build',
+        'cd /app && npm i serve -g && serve -s build',
       ]
   nginx:
     container_name: KK-front-nginx

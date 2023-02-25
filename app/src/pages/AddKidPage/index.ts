@@ -1,0 +1,1 @@
+export { AddKidPage } from './AddKidPage';

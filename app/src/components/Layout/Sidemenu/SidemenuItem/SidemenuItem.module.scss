@@ -1,0 +1,29 @@
+@import '../../../../assets/helpers/index.scss';
+
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: $secondaryColor;
+  padding: 5px 10px;
+  font-weight: bold;
+  border: 1px solid #fff;
+
+  &:hover {
+    color: $mainColor;
+    cursor: pointer;
+    background-color: $backgroundColor;
+  }
+
+  &_active {
+    color: $mainColor;
+    border-color: $mainColor;
+  }
+}
+
+.icon {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

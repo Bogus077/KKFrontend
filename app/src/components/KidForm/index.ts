@@ -1,0 +1,1 @@
+export { KidForm } from './KidForm';

@@ -1,0 +1,1 @@
+export { KidItem } from './KidItem';

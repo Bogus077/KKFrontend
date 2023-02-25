@@ -1,0 +1,36 @@
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 40px;
+  }
+}
+
+.content {
+  width: 100%;
+}

@@ -1,0 +1,11 @@
+@import '../../assets/helpers/index.scss';
+
+.main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: $secondaryColor;
+  font-weight: bold;
+  cursor: default;
+  opacity: 0.5;
+}

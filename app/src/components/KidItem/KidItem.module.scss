@@ -1,0 +1,15 @@
+@import '../../assets/helpers/index.scss';
+
+.main {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid $backgroundColor;
+  border-radius: 5px;
+  padding: 5px 10px;
+
+  &:hover {
+    background-color: $backgroundColor;
+    cursor: pointer;
+  }
+}

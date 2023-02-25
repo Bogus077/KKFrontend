@@ -1,0 +1,25 @@
+@import '../../../assets/helpers/index.scss';
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  width: 300px;
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.kids {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
