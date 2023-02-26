@@ -1,0 +1,58 @@
+@import '../../../assets/helpers/index.scss';
+
+$progressHeight: 10px;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: $progressHeight;
+  background-color: $backgroundColor;
+  border-radius: 5px;
+
+  &__fill {
+    position: absolute;
+    background-color: $mainColor;
+    height: $progressHeight;
+    width: 0%;
+    border-radius: 5px;
+  }
+
+  .divider {
+    position: absolute;
+    height: $progressHeight;
+    width: 3px;
+    left: 25%;
+    background-color: #fff;
+
+    &:nth-child(2) {
+      left: 50%;
+    }
+
+    &:nth-child(3) {
+      left: 75%;
+    }
+  }
+}
+
+.title {
+  color: $secondaryColor;
+}
+
+.values {
+  display: flex;
+  justify-content: space-between;
+
+  &__have {
+    font-weight: bold;
+  }
+
+  &__need {
+    color: $secondaryColor;
+  }
+}

@@ -11,4 +11,7 @@ export const frontendRoutes = {
   teams: {
     list: '/teams',
   },
+  map: {
+    place: '/map/place',
+  },
 };

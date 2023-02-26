@@ -20,6 +20,7 @@ import { DashboardPage } from './pages/Dashboard';
 import { TeamListPage } from './pages/TeamListPage';
 import { EditKidPage } from './pages/EditKidPage';
 import { AddKidPage } from './pages/AddKidPage';
+import { MapPlacePage } from './pages/MapPlacePage';
 
 const store = createStore(); // Possible additional params to store init func
 const persistor = persistStore(store);
@@ -64,6 +65,12 @@ export function App() {
                   <Route
                     path={frontendRoutes.teams.list}
                     element={<TeamListPage />}
+                  />
+
+                  {/* Карта */}
+                  <Route
+                    path={`${frontendRoutes.map.place}/:id`}
+                    element={<MapPlacePage />}
                   />
                 </Route>
               </Routes>
